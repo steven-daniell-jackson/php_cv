@@ -43,10 +43,10 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="<?php echo $GLOBALS['local_URL'];?>/">Home</a></li>
-              <li><a href="<?php echo $GLOBALS['local_URL']; ?>/about-me.php">About</a></li>
-               <li><a href="<?php echo $GLOBALS['local_URL']; ?>/coding-experience.php">Coding Experience</a></li>
-              <li><a href="<?php echo $GLOBALS['local_URL']; ?>/contact-me.php">Contact</a></li>
+              <li <?php if(basename($_SERVER['REQUEST_URI']) == 'php_cv'){ ?> class="active" <?php } ?>><a href="<?php echo $GLOBALS['local_URL'];?>/">Home</a></li>
+              <li <?php if(basename($_SERVER['REQUEST_URI']) == 'about-me.php'){ ?> class="active" <?php } ?>><a href="<?php echo $GLOBALS['local_URL']; ?>/about-me.php">About</a></li>
+               <li <?php if(basename($_SERVER['REQUEST_URI']) == 'coding-experience.php'){ ?> class="active" <?php }?>><a href="<?php echo $GLOBALS['local_URL']; ?>/coding-experience.php">Coding Experience</a></li>
+              <li <?php if(basename($_SERVER['REQUEST_URI']) == 'contact-me.php'){ ?> class="active" <?php } ?>><a href="<?php echo $GLOBALS['local_URL']; ?>/contact-me.php">Contact</a></li>
             </ul>
           </div>
         </nav>
